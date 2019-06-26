@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    background: #2f4f4f;/* #171d21;*/
+    font-family: 'Fira Mono', monospace;
+    color: #f4f7f5;
+    display: grid;
+    grid-template-columns: 20% 5% auto 5% 20%;
+    grid-template-rows: 10% auto 10%;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.headspace{
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+}
+
+footer{
+    grid-column: 2 / 5;
+    grid-row: 3 /4;
+    background: #E1C699;
+    margin-top: -1%;
+    z-index: -3;
+    box-shadow: 10px 10px 8px rgba(23,29,33,.9);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diskgroup{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 320px;
+
+}
+
+.disk{
+	background: black;
+	height: 15px;
+	width: 90%;
+    border-radius: 30px;
+}
+
+.eject{
+	background: black;
+	height: 15px;
+	width: 15px;
+	background: red;
+    border-radius: 10%;
+}
+
+#output{
+    overflow: auto;
+    max-height: 64vh;
+    /* width: 100%; */
+}
+.repl{
+	background-image: radial-gradient(#232a35, #1d232c, #171c23, #12151b);
+    grid-column: 3/4;
+    grid-row: 2 /3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 50px #E1C699;
+    border-radius: 30px;
+    font-size: 90%;
+    box-shadow: 10px 10px 8px rgba(23,29,33,.9);
+}
+
+
+.input{
+    margin-top: auto;
+}
+
+input{
+    width: 95%;
+    background: none;
+    border: none;
+    height: 100%;
+}
+
+.computer{
+    position: relative;
+    z-index: -1;
+    width: 900px;
+    height: 850px;
+    background: none;
+    /* border: solid 4px red; */
+    margin: auto;
+    margin-left: 100%;
+    display: block;
+}
+
+a,
+a:visited{
+	color: #7fd606;
+
+}
+
+.R{
+    color: #d8315b;
+}
+
+.B{
+    color: #3e92cc;
+}
+
+.G{
+    color: #7fd606;
+}
+
+.Y {
+    color: yellow;
+}

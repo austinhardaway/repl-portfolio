@@ -1,0 +1,16 @@
+{
+  "name": "austinhardaway-mk3",
+  "version": "1.0.0",
+  "description": "rewrite based on an classic computer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Hardaway",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.5.0",
+    "fastify-static": "^2.4.0",
+    "http-server": "^0.11.1"
+  }
+}
